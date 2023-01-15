@@ -15,12 +15,6 @@ body {
 	background-image: url("2.png");
 }
 
-.city img {
-	height:573px;
-	width: 100%;
-	opcity:0.5;
-}
-
 .content {
 	position: absolute;
 	top: 50%;
