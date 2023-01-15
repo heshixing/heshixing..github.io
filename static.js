@@ -10,7 +10,7 @@ window.onload = function () {
 }
 function initAnimate() {
     drawBg();
-    // 鏂囧瓧鍑嗗
+    // 初始化content内容
     const content = document.querySelector(".content");
     if (bless.length) {
         for (let i = 0; i < bless.length; i++) {
@@ -26,7 +26,7 @@ function initAnimate() {
         }
     }
 
-    // 鏂囧瓧鏍峰紡
+    // 配置content字体格式
     let con = document.querySelector(".content");
     if (blessStyle.color) con.style.color = blessStyle.color;
     if (blessStyle.shadowColor) con.style.textShadow = `0 0 10px ${blessStyle.shadowColor}`;
@@ -37,7 +37,7 @@ function initAnimate() {
         con.style.fontWeight = 400
     }
 
-    // 闊充箰鍑嗗
+    // 音乐播放
     if (music.src != "") {
         let m = new Audio(music.src);
         if (music.loop && music.loop == 1) {
@@ -57,6 +57,7 @@ function initAnimate() {
     animate();
 }
 var lastTime;
+//绘制动画
 function animate() {
     ctx.save();
     ctx.globalCompositeOperation = 'destination-out';
@@ -100,9 +101,10 @@ function animate() {
         }
     });
 
-    raf(animate);
+    raf(animate);//循环调用
 }
 
+//绘制月亮
 function drawMoon() {
     var moon = document.getElementById("moon");
     var centerX = canvas.width - 200, centerY = 100, width = 80;
