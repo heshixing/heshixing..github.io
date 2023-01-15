@@ -16,6 +16,7 @@ body {
 .city img {
 	height:573px;
 	width: 100%;
+	opcity:0.5;
 }
 
 .content {
