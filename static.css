@@ -6,13 +6,13 @@ body {
 }
 
 .city {
-	height:573px;
+	height:100%;
 	width: 100%;
 	position: fixed;
 	bottom: 0rem;
 	z-index: 100;
 	opacity: 0.5;
-	background-image: url("city.png");
+	background-image: url("2.png");
 }
 
 .city img {
