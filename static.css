@@ -11,6 +11,8 @@ body {
 	position: fixed;
 	bottom: 0rem;
 	z-index: 100;
+	opacity: 0.5;
+	background-image: url("1.png");
 }
 
 .city img {
