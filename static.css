@@ -6,6 +6,7 @@ body {
 }
 
 .city {
+	height:573px;
 	width: 100%;
 	position: fixed;
 	bottom: 0rem;
