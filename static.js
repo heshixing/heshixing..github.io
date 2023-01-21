@@ -81,7 +81,6 @@ function animate() {
         this.paint();
     })
 
-    drawMoon();
 
     bigbooms.foreach(function (index) {
         var that = this;
